@@ -289,9 +289,13 @@
     }
     .hero p {
         font-size: 1.2rem;
+        margin-left:10%;
     }
     .hero-img {
+        justify-content: center;
         max-width: 300px;
+        margin-right: 10%;
+        padding:0;
     }
 }
 .a {
