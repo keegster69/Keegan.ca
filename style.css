@@ -1,0 +1,298 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.hero {
+    position: relative;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    height: 100vh;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 80%, #deeaf7 100%), 
+                url('media/alps.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.hero h1 {
+    flex:1;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+.hero p {
+    flex:1;
+    max-width: 80%;
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+.hero-img img{
+    max-height: 500px;
+    border-radius: 20px 20px 0 -20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.content {
+    background: linear-gradient(to bottom,#deeaf7 0%, #b6c0c6 100%);
+    padding: 8% 8%;
+    scroll-margin-top: 80px;
+}
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px;
+    z-index: 1000;
+    background: hsl(0, 0%, 96%,0.2);
+}
+
+.logo {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size:1.5rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #deeaf7;
+}
+.content-txt{
+    border-radius: -30px;
+    border: 15px solid hsl(219, 14%, 55%,0.7);
+    padding:50px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.work, .music, .fitness {
+    display:flex;
+    padding:10px 15px;
+    border-radius: 30px;
+    flex-direction:column;
+    width: 100%;
+    font-size:2rem;
+    cursor:pointer;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.music-txt, .work-txt, .fitness-txt {
+    font-size:1.5rem;
+    max-height:0px;
+    overflow:hidden;
+    transition: 0.4s ease;
+}
+.music.expanded .music-txt {
+    max-height: 1000px;
+    padding: 20px 0px;
+}
+.music:hover, .work:hover, .fitness-hover {
+    transform: translateY(-5px);
+}
+.work.expanded .work-txt {
+    max-height: 1000px;
+    padding: 20px 0px;
+}
+.fitness.expanded .fitness-txt {
+    max-height: fit-content;
+    padding: 20px 0px;
+}
+.gym, .ski{
+    display: flex;
+    flex-direction: row; 
+    gap: 75px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.fitness-txt video {
+    max-width: 300px;
+}
+.Projects {
+    background: linear-gradient(to bottom, #b6c0c6 0%, #dce5ee);
+    padding: 8% 8%;
+}
+.project-container {
+    border-radius: -30px;
+    border: 15px solid hsl(219, 14%, 55%,0.7);
+    padding:50px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.hardhaq, .enable, .website {
+    display:flex;
+    font-size:2rem;
+    padding:10px 20px;
+    flex-direction:column;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.hardhaq-txt, .enable-txt, .website-txt {
+    font-size:1.5rem;
+    max-height:0px;
+    overflow:hidden;
+    transition: 0.4s ease;
+    display:flex;
+    gap:75px;
+    flex-direction:row;
+}
+.hardhaq article{
+    display:block;
+    padding: 20px 10px;
+    flex-direction:row;
+    gap: 75px;
+    justify-content:space-evenly;
+    max-width: 90%;
+    font-size: 1.5rem;
+    align-items: flex-start;
+}
+.hardhaq img{
+    max-width: 250px;
+}
+.enable article{
+    display:flex;
+    gap:75px;
+    flex-direction:row;
+    font-size:1.5rem;
+}
+.enable article img{
+    max-height: 320px;
+}
+.hardhaq:hover, .enable:hover, .website:hover {
+    transform:translateY(-5px);
+}
+.hardhaq.expanded .hardhaq-txt {
+    max-height: fit-content;
+    padding: 20px 0px;
+}
+.enable.expanded .enable-txt {
+    max-height: fit-content;
+    padding: 20px 0px;
+}
+.website.expanded .website-txt {
+    max-height: fit-content;
+    padding: 20px 0px;
+}
+.hardhaq article img{
+    max-width: 250px;
+}
+.enable article img{
+    padding:20px 0px;
+    max-height: 320px;
+}
+.skills {
+    display:flex;
+    flex-direction: column;
+    background-color:#b6c0c6;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.skills1 {
+    display:flex;
+    font-size:1.2rem;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px;
+    justify-content: center;
+    gap:100px;
+}
+.skills1 div {
+    background: linear-gradient(135deg, #d5dde1, #e2ebf4);
+    border: 5px solid hsla(208, 66%, 22%, 0.7);
+    width:200px;
+    height:250px;
+    padding: 30px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.matlab h2 {
+    margin-top: 25px;
+}
+.solidworks h2{
+    margin-top:10px;
+}
+.html {
+    scroll-behavior: smooth;
+}
+@media (max-width: 768px) {
+    .gym, .ski {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hardhaq-txt, .enable article, .website article {
+        flex-direction: column;
+        font-size:1.2rem;
+        text-align: center;
+        align-items: center;
+    }
+    .content, .content-txt, .projects, .project-container {
+        padding: 0;
+    }
+    .hardhaq img, .enable article img {
+        width: 100%;
+        max-width: 400px;
+        order: 2;
+        margin-top: 20px;
+    }
+    .work-txt, .fitness-txt, .music-txt {
+        font-size:1.2rem;
+    }
+    .navbar {
+        display: none;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 100px 5%;
+    }
+    .hero h1{
+        font-size:3rem;
+    }
+    .hero p {
+        font-size: 1.2rem;
+    }
+    .hero-img {
+        max-width: 300px;
+    }
+}
+.a {
+    display:inline;
+}
