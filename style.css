@@ -118,7 +118,7 @@
     transform: translateY(-5px);
 }
 .work.expanded .work-txt {
-    max-height: 1000px;
+    max-height: fit-content;
     padding: 20px 0px;
 }
 .fitness.expanded .fitness-txt {
@@ -272,7 +272,7 @@
         order: 2;
         margin-top: 20px;
     }
-    .work-txt, .fitness-txt, .music-txt {
+    .work-txt, .fitness-txt, .music-txt, .hardhaq article{
         font-size:1.2rem;
     }
     .navbar {
