@@ -264,6 +264,7 @@
     }
     .content, .content-txt, .projects, .project-container {
         padding: 0;
+        border: 0;
     }
     .hardhaq img, .enable article img {
         width: 100%;
